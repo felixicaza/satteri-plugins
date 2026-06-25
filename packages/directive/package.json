@@ -1,0 +1,53 @@
+{
+  "name": "satteri-directive",
+  "version": "0.0.0",
+  "description": "🧩 A plugin to render markdown directives with Satteri.",
+  "keywords": [
+    "satteri",
+    "satteri-plugins",
+    "markdown",
+    "mdx",
+    "mdast",
+    "hast",
+    "directive",
+    "container"
+  ],
+  "homepage": "https://github.com/felixicaza/satteri-plugins/tree/main/packages/directive#readme",
+  "bugs": {
+    "url": "https://github.com/felixicaza/satteri-plugins/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixicaza/satteri-plugins.git",
+    "directory": "packages/directive"
+  },
+  "license": "MIT",
+  "author": "Felix Icaza <fx.joliett17@gmail.com>",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "prepublishOnly": "pnpm build",
+    "start": "tsx src/index.ts",
+    "start:watch": "tsx watch src/index.ts"
+  },
+  "devDependencies": {
+    "satteri": "catalog:peer"
+  },
+  "peerDependencies": {
+    "satteri": ">=0.7.0"
+  }
+}

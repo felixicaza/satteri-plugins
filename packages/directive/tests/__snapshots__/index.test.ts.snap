@@ -1,0 +1,38 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`satteri directive plugin > should render a container 1`] = `
+{
+  "html": "<section title="Container Directive" id="readme" class="container"><p>Content here</p></section>
+",
+}
+`;
+
+exports[`satteri directive plugin > should render a container, leaf and text directives 1`] = `
+{
+  "html": "<main id="readme" class="test"><p>Lorem<br>
+ipsum.</p><hr class="red"><p>A <i>lovely</i> language know as <abbr title="HyperText Markup Language">HTML</abbr>.</p></main>
+",
+}
+`;
+
+exports[`satteri directive plugin > should render a leaf directive 1`] = `
+{
+  "html": "<input type="text" disabled="">
+",
+}
+`;
+
+exports[`satteri directive plugin > should render a text directive 1`] = `
+{
+  "html": "<p>A <em>lovely</em> language know as <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+",
+}
+`;
+
+exports[`satteri directive plugin > should render nested containers 1`] = `
+{
+  "html": "<section title="Container Directive" id="first" class="container"><p>First container</p><section data-nested="true" id="second" class="inner-container"><p>Second container</p></section></section>
+<p>:::</p>
+",
+}
+`;

@@ -1,0 +1,62 @@
+{
+  "name": "@felixicaza/satteri-plugins",
+  "version": "0.0.0",
+  "private": true,
+  "description": " A collection of plugins for Satteri.",
+  "keywords": [
+    "satteri",
+    "satteri-plugins",
+    "markdown",
+    "mdx",
+    "mdast",
+    "hast",
+    "directive",
+    "container"
+  ],
+  "license": "MIT",
+  "author": "Felix Icaza <fx.joliett17@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev",
+    "lint": "oxlint . && eslint . --cache",
+    "lint:fix": "oxlint . --fix --fix-suggestions --fix-dangerously && eslint . --cache --fix",
+    "prepare": "simple-git-hooks",
+    "prepublishOnly": "pnpm build",
+    "release:directive": "pnpm -C packages/directive exec bumpp --tag \"satteri-directive@%s\" --commit \"release(directive): %s\" --no-push",
+    "start": "pnpm -r start",
+    "start:watch": "pnpm -r start:watch",
+    "test": "vitest",
+    "test:update": "vitest --update",
+    "typecheck": "oxlint . --type-aware --type-check"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm nano-staged"
+  },
+  "nano-staged": {
+    "*": [
+      "pnpm lint:fix",
+      "pnpm typecheck"
+    ]
+  },
+  "devDependencies": {
+    "@felixicaza/eslint-config": "catalog:lint",
+    "@felixicaza/oxlint-config": "catalog:lint",
+    "@felixicaza/tsdown-config": "catalog:build",
+    "@types/node": "catalog:",
+    "bumpp": "catalog:releasing",
+    "dedent": "1.7.2",
+    "eslint": "catalog:lint",
+    "jiti": "catalog:lint",
+    "nano-staged": "catalog:lint",
+    "oxlint": "catalog:lint",
+    "oxlint-tsgolint": "catalog:lint",
+    "satteri": "catalog:peer",
+    "simple-git-hooks": "catalog:lint",
+    "tsdown": "catalog:build",
+    "tsx": "catalog:dev",
+    "typescript": "catalog:",
+    "vitest": "catalog:testing"
+  },
+  "packageManager": "pnpm@11.8.0"
+}
