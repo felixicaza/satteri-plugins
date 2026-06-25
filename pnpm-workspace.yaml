@@ -4,6 +4,7 @@ packages:
 catalog:
    "@types/node": 26.0.0
    typescript: 6.0.3
+   dedent: 1.7.2
 
 catalogs:
    dev:

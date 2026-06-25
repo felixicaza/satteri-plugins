@@ -45,7 +45,7 @@
     "@felixicaza/tsdown-config": "catalog:build",
     "@types/node": "catalog:",
     "bumpp": "catalog:releasing",
-    "dedent": "1.7.2",
+    "dedent": "catalog:",
     "eslint": "catalog:lint",
     "jiti": "catalog:lint",
     "nano-staged": "catalog:lint",
