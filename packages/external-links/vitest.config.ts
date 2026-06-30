@@ -2,9 +2,6 @@ import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   test: {
-    projects: [
-      'packages/directive',
-      'packages/external-links'
-    ]
+    include: ['tests/**/*.test.ts']
   }
 })

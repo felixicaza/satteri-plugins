@@ -7,6 +7,7 @@ A collection of plugins for [Satteri](https://satteri.bruits.org/).
 ## 📦 Packages
 
 - [`satteri-directive`](./packages/directive): A plugin to render markdown directives with Satteri.
+- [`satteri-external-links`](./packages/external-links): A plugin to handle external links with Satteri.
 
 ## 🤝 Contributing
 

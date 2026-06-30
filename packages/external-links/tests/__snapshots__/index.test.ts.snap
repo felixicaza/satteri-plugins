@@ -1,0 +1,116 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`satteri external links plugin with custom config > should add a \`[rel]\` w/ \`rel\` set to a string 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" rel="nofollow">https://example.com"&gt;HTTPS</a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin with custom config > should add a \`[rel]\` w/ \`rel\` set to an array 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" rel="nofollow noopener">https://example.com"&gt;HTTPS</a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin with custom config > should add a \`[target]\` w/ \`target\` set to a known target 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" target="_blank">https://example.com"&gt;HTTPS</a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin with custom config > should add content at the end of the link w/ \`content\` as a single child 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" rel="nofollow">https://example.com"&gt;HTTPS<span>🔗</span></a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin with custom config > should add content at the end of the link w/ \`content\` as an array of children 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" rel="nofollow">https://example.com"&gt;HTTPS<span> (<em>opens in a new window</em>)</span></a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin with custom config > should add dynamic \`content\` to links 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" rel="nofollow">https://example.com"&gt;HTTPS<span class="sr-only"> (opens in a new window)</span></a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin with custom config > should add dynamic \`contentProperties\` to links 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" rel="nofollow">https://example.com"&gt;HTTPS<span class="sr-only hidden"> (opens in a new window)</span></a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin with custom config > should add dynamic \`target\`, \`rel\` to links 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" rel="nofollow noopener noreferrer" target="_blank">https://example.com"&gt;HTTPS</a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin with custom config > should add properties to the link w/ \`properties\` 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" class="external-link" rel="nofollow">https://example.com"&gt;HTTPS</a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin with custom config > should add properties to the span at the end of the link w/ \`contentProperties\` 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" rel="nofollow">https://example.com"&gt;HTTPS<span class="sr-only">🔗</span></a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin with custom config > should add rel to a link that matches the test function 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" rel="nofollow">https://example.com"&gt;HTTPS</a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin with custom config > should not add a \`[rel]\` w/ \`rel: []\` 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS">https://example.com"&gt;HTTPS</a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin with custom config > should not add rel to a link that does not match the test function 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" rel="nofollow">https://example.com"&gt;HTTPS</a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin with custom config > should support \`mailto\` protocols w/ \`mailto\` in \`protocols\` 1`] = `
+"<p><a href="mailto:example@example.com">Mailto link</a></p>
+"
+`;
+
+exports[`satteri external links plugin without custom config > should change a http link 1`] = `
+"<p><a href="http://example.com"><a href="http://example.com%22%3EHTTP" rel="nofollow">http://example.com"&gt;HTTP</a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin without custom config > should change a https link 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" rel="nofollow">https://example.com"&gt;HTTPS</a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin without custom config > should change a protocol-relative link 1`] = `
+"<p><a href="//example.com">Protocol-relative link</a></p>
+"
+`;
+
+exports[`satteri external links plugin without custom config > should not add a \`[target]\` by default 1`] = `
+"<p><a href="https://example.com"><a href="https://example.com%22%3EHTTPS" rel="nofollow">https://example.com"&gt;HTTPS</a> link</a></p>
+"
+`;
+
+exports[`satteri external links plugin without custom config > should not change a fragment link 1`] = `
+"<p><a href="#section">Fragment link</a></p>
+"
+`;
+
+exports[`satteri external links plugin without custom config > should not change a mailto link 1`] = `
+"<p><a href="mailto:example@example.com">Mailto link</a></p>
+"
+`;
+
+exports[`satteri external links plugin without custom config > should not change a relative link 1`] = `
+"<p><a href="./example.html">Relative link</a></p>
+"
+`;
+
+exports[`satteri external links plugin without custom config > should not change a search link 1`] = `
+"<p><a href="?query=example">Search link</a></p>
+"
+`;
+
+exports[`satteri external links plugin without custom config > should not change a www link 1`] = `
+"<p><a href="www.example.com"><a href="http://www.example.com%22%3EWWW" rel="nofollow">www.example.com"&gt;WWW</a> link</a></p>
+"
+`;
