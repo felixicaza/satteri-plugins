@@ -1,0 +1,55 @@
+{
+  "name": "satteri-external-links",
+  "version": "0.0.0",
+  "description": "🌐 A plugin to handle external links with Satteri.",
+  "keywords": [
+    "satteri",
+    "satteri-plugins",
+    "satteri-plugin",
+    "markdown",
+    "mdx",
+    "hast",
+    "external-links",
+    "link",
+    "url",
+    "html"
+  ],
+  "homepage": "https://github.com/felixicaza/satteri-plugins/tree/main/packages/external-links#readme",
+  "bugs": {
+    "url": "https://github.com/felixicaza/satteri-plugins/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixicaza/satteri-plugins.git",
+    "directory": "packages/external-links"
+  },
+  "license": "MIT",
+  "author": "Felix Icaza <fx.joliett17@gmail.com>",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "prepublishOnly": "pnpm build",
+    "start": "tsx src/index.ts",
+    "start:watch": "tsx watch src/index.ts"
+  },
+  "devDependencies": {
+    "satteri": "catalog:peer"
+  },
+  "peerDependencies": {
+    "satteri": ">=0.7.0"
+  }
+}

@@ -6,12 +6,11 @@
   "keywords": [
     "satteri",
     "satteri-plugins",
+    "satteri-plugin",
     "markdown",
     "mdx",
     "mdast",
-    "hast",
-    "directive",
-    "container"
+    "hast"
   ],
   "license": "MIT",
   "author": "Felix Icaza <fx.joliett17@gmail.com>",
@@ -24,6 +23,7 @@
     "prepare": "simple-git-hooks",
     "prepublishOnly": "pnpm build",
     "release:directive": "pnpm -C packages/directive exec bumpp --tag \"satteri-directive@%s\" --commit \"release(directive): %s\" --no-push",
+    "release:external": "pnpm -C packages/external-links exec bumpp --tag \"satteri-external-links@%s\" --commit \"release(external-links): %s\" --no-push",
     "start": "pnpm -r start",
     "start:watch": "pnpm -r start:watch",
     "test": "vitest",
